@@ -1,5 +1,25 @@
+body {
+    margin:0;
+    padding :0;
+    text-align: center;
+   
+}
 nav{ margin-bottom: 300px}
 
-#bio{
+.scrollup {
+    background-color: #2a4789;
+    color : #fff;
     
+}
+.scrollup:hover {
+    background-color: #2a4789;
+    color : #fff;
+}
+#bio {
+    margin-left: 650px;
+   
+}   
+
+.endbio {
+    margin-left: -650px;
 }
