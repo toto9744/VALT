@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	//$('.formulaire').hide();
+	$('.formulaire').hide();
 	$('.contact').click(function(){
 	$('.formulaire').toggle('slow')	
 
