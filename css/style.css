@@ -1,3 +1,143 @@
+@charset "UTF-8";
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Signika', sans-serif;
+*/
+/*bleu de simplon,*/
+/*jaune de simplo,*/
+/*police des titres*/
+/*police paragraphes*/
+/*police de la navigation*/
+/*Taille de police des paragraphes*/
+/*Taille de police des paragraphes en responsives*/
+body {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center; }
 
+/*Stylisation de la bar de navigation*/
+.navbar-inverse {
+  height: 120px;
+  margin-bottom: 50px;
+  font-family: "raleway", sans-serif;
+  border: none;
+  border-bottom: 2px solid rgba(42, 71, 137, 0.2);
+  box-shadow: 5px 5px 8px rgba(42, 71, 137, 0.2);
+  background-color: white; }
+  .navbar-inverse img {
+    width: 240px;
+    height: 100px;
+    margin: 10px; }
+  .navbar-inverse button {
+    height: 40px;
+    width: 100px;
+    margin-left: 50px;
+    border-color: #2a4789;
+    text-transform: uppercase;
+    background: white;
+    color: #2a4789; }
+  .navbar-inverse button:hover {
+    background-color: #efdf31;
+    color: white; }
+  .navbar-inverse ul {
+    text-transform: uppercase; }
+
+.navbar-collapse {
+  margin-top: 3%; }
+
+/*changement de couleur des liens de la bar de nav*/
+.navbar-inverse .navbar-nav > li > a {
+  color: #2a4789; }
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #efdf31; }
+
+/*ajout d'un carousel - modif ajout d'une bordure*/
+.carousel-inner {
+  border: solid 10px #2a4789; }
+
+/*Stylisation du text a l'intérieur du carousel*/
+.carousel-caption {
+  margin-bottom: 150px; }
+  .carousel-caption h1 {
+    font-family: "Signika", sans-serif;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(239, 223, 49, 0.3);
+    margin-bottom: 30px;
+    padding-top: 8px; }
+  .carousel-caption p {
+    font-family: "Crimson Text", serif;
+    font-size: 24px; }
+
+/*supression du text dans le carousel si la width est inférieur a 1000px*/
+@media all and (max-width: 1000px) {
+  .carousel-caption {
+    display: none; } }
+/*Stylasation du bouton responsive de la navbar*/
+button.navbar-toggle.collapsed {
+  background-color: #2a4789;
+  width: 60px; }
+
+button.navbar-toggle.collapsed:hover {
+  background-color: #efdf31; }
+
+.navbar-toggle .icon-bar {
+  background-color: red; }
+
+/*Ajout d'un trait separateur d'element*/
+.trait {
+  height: 4px;
+  width: 150px;
+  margin: auto;
+  background: rgba(239, 223, 49, 0.7);
+  border-radius: 8px;
+  margin-top: 80px;
+  margin-bottom: 80px; }
+
+/*stylisation du text*/
+.intro {
+  margin-bottom: 100px; }
+
+.intro p {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  font-family: policePara;
+  font-size: 24px;
+  color: #2a4789; }
+
+.intro h2 {
+  width: 600px;
+  margin: auto;
+  margin-bottom: 40px; }
+
+/*changement de la taille de police en dessous de 1020px;*/
+@media all and (max-width: 1020px) {
+  .intro p {
+    font-size: 15px;
+    width: 300px; }
+
+  .intro h2 {
+    width: 350px;
+    font-size: 24px; } }
+/*redimension de l'img */
+@media all and (max-width: 420px) {
+  .navbar-brand {
+    margin-top: -65px; } }
+.scrollup {
+  background-color: #2a4789;
+  color: #fff; }
+
+.scrollup:hover {
+  background-color: #2a4789;
+  color: #fff; }
+
+#bio {
+  margin-left: 650px; }
+
+.endbio {
+  margin-left: -650px; }
 
 /*# sourceMappingURL=style.css.map */
