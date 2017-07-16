@@ -16,6 +16,50 @@ body {
   padding: 0;
   text-align: center; }
 
+/*Mise en place d'un formulaire*/
+.formulaire {
+  height: 600px;
+  width: 400px;
+  position: absolute;
+  margin-left: 750px;
+  background-color: #ededed;
+  z-index: 2;
+  border-radius: 8px;
+  border: 4px solid #2a4789;
+  font-family: "raleway", sans-serif; }
+  .formulaire h3 {
+    margin-top: 40px; }
+  .formulaire h5 {
+    margin-top: 40px; }
+  .formulaire label {
+    float: left;
+    clear: left;
+    margin: 11px 20px 0 0;
+    width: 95px;
+    text-align: right;
+    color: #2a4789;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 0px #F2F2F2; }
+  .formulaire input {
+    width: 260px;
+    height: 55px;
+    padding: 5px 20px 0 20px;
+    margin: 0 0 20px 0;
+    background: white;
+    border-radius: 5px;
+    color: #2a4789; }
+  .formulaire textarea {
+    width: 260px;
+    height: 170px;
+    padding: 12px 20px 0 20px;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+    text-transform: uppercase; }
+  .formulaire .envoie {
+    background: #efdf31;
+    color: colorBleu;
+    margin-top: 10px; }
+
 /*Stylisation de la bar de navigation*/
 .navbar-inverse {
   height: 120px;
