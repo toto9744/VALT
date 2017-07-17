@@ -184,4 +184,19 @@ button.navbar-toggle.collapsed:hover {
 .endbio {
   margin-left: -650px; }
 
+#video {
+  height: 460px;
+  width: 700px;
+  margin: auto;
+  border: solid 3px black; }
+  #video img {
+    height: 390px; }
+
+.nav-center {
+  margin-bottom: 30px;
+  text-align: center;
+  display: inline-block; }
+  .nav-center a {
+    float: left; }
+
 /*# sourceMappingURL=style.css.map */
