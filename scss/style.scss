@@ -1,0 +1,146 @@
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Signika', sans-serif;
+*/
+
+$colorBleu : #2a4789; /*bleu de simplon,*/
+$colorJaune : #efdf31;/*jaune de simplo,*/
+$policeNav : 'raleway', sans-serif; /*police des titres*/
+$policePara :  'Crimson Text', serif; /*police paragraphes*/
+$policeTitre : 'Signika', sans-serif;	/*police de la navigation*/
+$sizePara : 24px;/*Taille de police des paragraphes*/
+$sizeResponsive : 15px;/*Taille de police des paragraphes en responsives*/
+
+body {
+    margin:0 auto;
+    padding :0;
+    text-align: center;
+   
+}
+/*Mise en place d'un formulaire*/
+.formulaire { height: 600px; width: 400px; position: absolute;
+ margin-left: 750px; background-color: #ededed; z-index: 2; border-radius: 8px;
+ border: 4px solid $colorBleu;
+ font-family: $policeNav;
+ h3 { margin-top: 40px; }
+ h5 { margin-top: 40px; }
+ label {float: left; clear: left; margin: 11px 20px 0 0;
+ 	width: 95px; text-align: right;color: $colorBleu; 
+ 	text-transform: uppercase;
+ 	text-shadow: 0px 1px 0px #F2F2F2;}
+
+ input{ width: 260px; height: 55px; padding: 5px 20px 0 20px; margin : 0 0 20px 0;
+ background: white; border-radius: 5px;color: $colorBleu; }
+ textarea { width: 260px; height: 170px; padding: 12px 20px 0 20px; margin: 0 0 20px 0;border-radius: 5px;
+ text-transform: uppercase; }
+ .envoie { background: $colorJaune; color: colorBleu; margin-top: 10px;} 	 }
+
+
+
+/*Stylisation de la bar de navigation*/
+.navbar-inverse{ 
+	height: 120px;
+	margin-bottom: 50px;
+	 font-family : $policeNav;
+	 border: none;
+	 border-bottom: 2px solid rgba(42, 71, 137,0.2);
+	 box-shadow: 5px 5px 8px rgba(42, 71, 137,0.2);
+	 background-color: white;
+	 img{
+
+	 	width: 240px;height: 100px;
+	 	margin:10px;
+	 	
+	 	}
+	 
+	button{
+		height: 40px;
+		width: 100px;
+		margin-left: 50px;
+		border-color: $colorBleu;
+		
+		text-transform: uppercase;
+		background: white;
+		color: $colorBleu;
+			}
+	button:hover { 
+		background-color: $colorJaune;
+		color: white; }		
+	 	
+	 	ul{
+	 		
+	 		text-transform: uppercase;
+	 		}
+	 	
+
+	 }
+	 .navbar-collapse{margin-top: 3%;}
+	/*changement de couleur des liens de la bar de nav*/ 					
+	.navbar-inverse .navbar-nav>li>a{
+	 	color: $colorBleu;
+	 }
+	 .navbar-inverse .navbar-nav>li>a:hover{
+	 	color: $colorJaune;
+	 }					
+
+/*ajout d'un carousel - modif ajout d'une bordure*/	 	
+.carousel-inner { border: solid 10px $colorBleu;
+ }	 	
+
+/*Stylisation du text a l'intérieur du carousel*/
+.carousel-caption { margin-bottom: 150px; 
+ h1 {font-family: $policeTitre;
+	height: 100px; width: 100%; background-color: rgba(239, 223, 49,0.3); margin-bottom: 30px;
+	padding-top: 8px; }	
+p { font-family: $policePara; font-size: $sizePara; }	
+}
+/*supression du text dans le carousel si la width est inférieur a 1000px*/
+@media all and (max-width: 1000px){
+	.carousel-caption {display: none;}
+}
+/*Stylasation du bouton responsive de la navbar*/
+button.navbar-toggle.collapsed  {background-color: $colorBleu;width: 60px;}
+button.navbar-toggle.collapsed:hover {background-color: $colorJaune;}
+.navbar-toggle .icon-bar {background-color: red;}
+
+
+/*Ajout d'un trait separateur d'element*/
+.trait { height: 4px;width: 150px; margin: auto; background: rgba(239, 223, 49,0.7);
+border-radius: 8px; margin-top: 80px;margin-bottom: 80px; }
+
+/*stylisation du text*/
+.intro {margin-bottom: 100px;}
+.intro p {text-align: center; width: 500px; margin: auto; font-family: policePara; 
+font-size: $sizePara; color: $colorBleu; }
+.intro h2 {width: 600px;margin: auto; margin-bottom: 40px;}
+/*changement de la taille de police en dessous de 1020px;*/
+@media all and (max-width: 1020px){
+	.intro p { font-size: $sizeResponsive; width: 300px; }
+     .intro h2 {width: 350px; font-size: 24px;}
+
+}
+/*redimension de l'img */
+@media all and (max-width: 420px){
+	.navbar-brand  { margin-top:-65px;}
+}
+
+.scrollup {
+    background-color: #2a4789;
+    color : #fff;
+    
+}
+.scrollup:hover {
+    background-color: #2a4789;
+    color : #fff;
+}
+#bio {
+    margin-left: 650px;
+   
+}   
+
+.endbio {
+    margin-left: -650px;
+}
+	
+
