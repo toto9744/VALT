@@ -4,33 +4,12 @@ $(document).ready(function(){
 	$('.formulaire').toggle('slow')	
 
 	});
+    $('li:nth-child(1)').mouseenter(function(){
+    $('.trait_anime').animate({width: '+=140px' },1000)});
+    $('li:nth-child(2)').mouseenter(function(){
+    $('.trait_anime2').animate({width: '+=120px' },1000)});
+    $('li:nth-child(3)').mouseenter(function(){
+    $('.trait_anime3').animate({width: '+=120px' },1000)});
+  })
 
 
-$('.slider').on(function(){
-$('.center').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-});
-});

@@ -16,6 +16,24 @@ body {
   padding: 0;
   text-align: center; }
 
+.trait_anime {
+  width: 10px;
+  height: 3px;
+  background: #efdf31;
+  max-width: 150px; }
+
+.trait_anime2 {
+  width: 10px;
+  height: 3px;
+  background: #efdf31;
+  max-width: 135px; }
+
+.trait_anime3 {
+  width: 10px;
+  height: 3px;
+  background: #efdf31;
+  max-width: 130px; }
+
 /*Mise en place d'un formulaire*/
 .formulaire {
   height: 600px;
@@ -124,7 +142,7 @@ body {
     padding-top: 8px; }
   .carousel-caption p {
     font-family: "Crimson Text", serif;
-    font-size: 24px; }
+    font-size: 26px; }
 
 /*supression du text dans le carousel si la width est inférieur a 1000px*/
 /*Stylasation du bouton responsive de la navbar*/
@@ -138,6 +156,7 @@ button.navbar-toggle.collapsed:hover {
 .navbar-inverse button {
   background-color: colorJaune; }
 
+/*changement du boutton responsive bar de navigation*/
 .navbar-inverse .navbar-toggle {
   border: none; }
 
@@ -208,16 +227,34 @@ button.navbar-toggle.collapsed:hover {
 @media all and (max-width: 700px) {
   .navbar-inverse img {
     margin-top: -60px; } }
-.scrollup {
-  background-color: #2a4789;
-  color: #fff; }
+#bio img {
+  width: 190px;
+  height: 190px; }
 
-.scrollup:hover {
+@keyframes example {
+  0% {
+    background-color: #efdf31; }
+  25% {
+    background-color: #2a4789; }
+  50% {
+    background-color: #efdf31; }
+  100% {
+    background-color: #2a4789; } }
+/*Stylisation du bouton*/
+.endbio button {
   background-color: #2a4789;
-  color: #fff; }
+  border: none;
+  border-radius: 6px;
+  width: 110px;
+  height: 36px; }
+  .endbio button a {
+    color: white;
+    text-decoration: none; }
 
-#bio {
-  margin-left: 650px; }
+.endbio button:hover {
+  background-color: #efdf31;
+  animation-name: example;
+  animation-duration: 4s; }
 
 .endbio {
   margin-left: -650px; }
