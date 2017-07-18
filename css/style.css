@@ -97,6 +97,17 @@ body {
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #efdf31; }
 
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: red; }
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  margin: inherit;
+  border: none; }
+
+@media all and (max-width: 800px) {
+  a {
+    font-size: 24px;
+    margin-top: 0px; } }
 /*ajout d'un carousel - modif ajout d'une bordure*/
 .carousel-inner {
   border: solid 10px #2a4789; }
@@ -116,9 +127,6 @@ body {
     font-size: 24px; }
 
 /*supression du text dans le carousel si la width est inférieur a 1000px*/
-@media all and (max-width: 1000px) {
-  .carousel-caption {
-    display: none; } }
 /*Stylasation du bouton responsive de la navbar*/
 button.navbar-toggle.collapsed {
   background-color: #2a4789;
@@ -127,8 +135,17 @@ button.navbar-toggle.collapsed {
 button.navbar-toggle.collapsed:hover {
   background-color: #efdf31; }
 
-.navbar-toggle .icon-bar {
-  background-color: red; }
+.navbar-inverse button {
+  background-color: colorJaune; }
+
+.navbar-inverse .navbar-toggle {
+  border: none; }
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: #2a4789; }
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  margin-top: 30px; }
 
 /*Ajout d'un trait separateur d'element*/
 .trait {
@@ -158,18 +175,39 @@ button.navbar-toggle.collapsed:hover {
   margin-bottom: 40px; }
 
 /*changement de la taille de police en dessous de 1020px;*/
-@media all and (max-width: 1020px) {
+@media all and (max-width: 790px) {
   .intro p {
     font-size: 15px;
     width: 300px; }
 
   .intro h2 {
     width: 350px;
-    font-size: 24px; } }
+    font-size: 24px; }
+
+  .carousel-inner {
+    display: none; }
+
+  .carousel-caption  {
+    display: none; }
+
+  .carousel-indicators {
+    display: none; }
+
+  .glyphicon-chevron-left:before {
+    display: none; }
+
+  .glyphicon-chevron-right:before {
+    display: none; }
+
+  .trait {
+    margin-top: 150px; }
+
+  .navbar-inverse button {
+    margin-right: 46px; } }
 /*redimension de l'img */
-@media all and (max-width: 420px) {
-  .navbar-brand {
-    margin-top: -65px; } }
+@media all and (max-width: 700px) {
+  .navbar-inverse img {
+    margin-top: -60px; } }
 .scrollup {
   background-color: #2a4789;
   color: #fff; }
@@ -188,10 +226,21 @@ button.navbar-toggle.collapsed:hover {
   height: 460px;
   width: 700px;
   margin: auto;
-  border: solid 3px  black; }
-  #video img {
-    height: 390px; }
+  border: solid 3px  black;
+  background: #2a4789; }
+  #video iframe {
+    height: 390px;
+    margin-top: 4%;
+    width: 640px; }
 
+@media all and (max-width: 700px) {
+  #video {
+    height: 250px;
+    width: 300px; }
+    #video iframe {
+      height: 230px;
+      width: 280px;
+      margin-top: 2%; } }
 .nav-center {
   margin-bottom: 30px;
   text-align: center;

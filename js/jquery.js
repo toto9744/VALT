@@ -4,8 +4,7 @@ $(document).ready(function(){
 	$('.formulaire').toggle('slow')	
 
 	});
-	$('.carousel-caption').hide()
-	$('.carousel-caption').show(3300)
+
 
 $('.slider').on(function(){
 $('.center').slick({
