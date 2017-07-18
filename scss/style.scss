@@ -19,9 +19,14 @@ body {
     text-align: center;
    
 }
-.trait_anime { width: 10px; height: 3px; background: $colorJaune; max-width: 150px;  }
-.trait_anime2 { width: 10px; height: 3px; background: $colorJaune; max-width: 135px;  }
-.trait_anime3 { width: 10px; height: 3px; background: $colorJaune; max-width: 130px;  }
+
+/*ajout d'animation pour la nav*/
+.trait_anime { width: 1px; height: 3px; background: $colorJaune; max-width: 165px; min-width: 1px; }
+.trait_anime2 { width: 1px; height: 3px; background: $colorJaune; max-width: 135px; min-width: 1px;  }
+.trait_anime3 { width: 1px; height: 3px; background: $colorJaune; max-width: 130px; min-width: 1px;  }
+@media all and (max-width: 1080px){
+	.trait_anime, .trait_anime2, .trait_anime3 { display: none; }
+}
 /*Mise en place d'un formulaire*/
 .formulaire { height: 600px; width: 400px; position: absolute;
  margin-left: 750px; background-color: #ededed; z-index: 2; border-radius: 8px;
