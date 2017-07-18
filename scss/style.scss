@@ -135,14 +135,6 @@ font-size: $sizePara; color: $colorBleu; }
     background-color: #2a4789;
     color : #fff;
 }
-#bio {
-    margin-left: 650px;
-   
-}   
-
-.endbio {
-    margin-left: -650px;
-}
 
 #video {height: 460px; 
 	width: 700px; 
@@ -156,3 +148,54 @@ font-size: $sizePara; color: $colorBleu; }
 }
 
 
+.wrapper{
+  width:100%;
+  text-align:center;
+}
+h2{
+  font-family:'Opan Sans', sans-serif;
+  color:#555;
+}
+.yo{
+  width:90%;
+  margin:0px auto;
+}
+.slick-slide{
+  margin:10px;
+}
+
+
+hr{
+	width:600px;
+}
+#product {
+	img {
+		width: 650px;
+		height: 550px;
+		margin-left: 50px;
+	}
+}
+footer { 
+	img {
+		width: 240px;height: 100px;
+	 	
+	}
+	i {	display: inline;
+		margin-left: 100px;
+	}
+}
+
+
+.linkf {
+	width: 250px;
+	padding: 50px;
+	margin-left: 45em;
+
+	
+}
+
+.icons {
+	width: 550px;
+	margin-left: 750px;
+	margin-top: -80px;
+}
