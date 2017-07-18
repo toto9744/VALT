@@ -16,24 +16,31 @@ body {
   padding: 0;
   text-align: center; }
 
+/*ajout d'animation pour la nav*/
 .trait_anime {
-  width: 10px;
+  width: 1px;
   height: 3px;
   background: #efdf31;
-  max-width: 150px; }
+  max-width: 165px;
+  min-width: 1px; }
 
 .trait_anime2 {
-  width: 10px;
+  width: 1px;
   height: 3px;
   background: #efdf31;
-  max-width: 135px; }
+  max-width: 135px;
+  min-width: 1px; }
 
 .trait_anime3 {
-  width: 10px;
+  width: 1px;
   height: 3px;
   background: #efdf31;
-  max-width: 130px; }
+  max-width: 130px;
+  min-width: 1px; }
 
+@media all and (max-width: 1080px) {
+  .trait_anime, .trait_anime2, .trait_anime3 {
+    display: none; } }
 /*Mise en place d'un formulaire*/
 .formulaire {
   height: 600px;
