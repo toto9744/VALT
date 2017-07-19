@@ -1,9 +1,9 @@
 $(document).ready(function(){
   $('.formulaire').hide();
-	$('.contact').click(function(){
-	$('.formulaire').toggle('slow')	
+  $('.contact').click(function(){
+  $('.formulaire').toggle('slow') 
 });
-	
+  
 
     $('li:nth-child(1)').mouseenter(function(){
     $('.trait_anime').animate({width: '+=160px' },1000)});
