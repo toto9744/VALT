@@ -4,14 +4,18 @@ $(document).ready(function(){
 	$('.formulaire').toggle('slow')	
 
 	});
-	$('.carousel-caption').hide()
-	$('.carousel-caption').show(3300)
-
-$('.slider').on(function(){
-$('.center').slick({
-  centerMode: true,
-  centerPadding: '60px',
+	$('.carousel-caption').hide();
+	$('.carousel-caption').show(3300);
+  
+  $('.yo').slick({
   slidesToShow: 3,
+  slidesToScroll: 1,
+  infinite:true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  dots:true,
+  centerMode: true,
+  centerPadding: '20px',
   responsive: [
     {
       breakpoint: 768,
@@ -32,6 +36,8 @@ $('.center').slick({
       }
     }
   ]
-});
-});
+  });
+
+
+
 });

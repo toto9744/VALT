@@ -199,4 +199,29 @@ button.navbar-toggle.collapsed:hover {
   .nav-center a {
     float: left; }
 
+.wrapper {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px; }
+
+h2 {
+  font-family: 'Opan Sans', sans-serif;
+  color: #555; }
+
+.yo {
+  width: 90%;
+  margin: 0px auto;
+  padding-top: 50px; }
+
+.slick-slide {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+hr {
+  width: 600px; }
+
+@media all and (max-width: 420px) {
+  .slick-slide {
+    display: block; } }
+
 /*# sourceMappingURL=style.css.map */
