@@ -28,8 +28,9 @@ $('.yo').slick({
   slidesToScroll: 1,
   infinite:true,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 3000,
   dots:true,
+  arrows: true,
   centerMode: true,
   centerPadding: '20px',
   responsive: [
@@ -45,7 +46,7 @@ $('.yo').slick({
     {
       breakpoint: 480,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
         centerPadding: '40px',
         slidesToShow: 1
