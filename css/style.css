@@ -313,8 +313,10 @@ button.navbar-toggle.collapsed:hover {
   padding-top: 30px; }
 
 h2 {
-  font-family: 'Opan Sans', sans-serif;
-  color: #555; }
+  font-family: "Signika", sans-serif, sans-serif;
+  color: white;
+  font-size: 34px;
+  text-transform: uppercase; }
 
 .yo {
   width: 90%;
@@ -332,6 +334,13 @@ hr {
   width: 300px;
   height: 550px;
   margin-left: 50px; }
+
+/*Bandeau separateur*/
+.bandeau {
+  height: 190px;
+  width: 100%;
+  background: #2a4789;
+  padding: 50px; }
 
 footer {
   margin-top: 70px;

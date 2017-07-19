@@ -207,8 +207,10 @@ font-size: $sizePara; color: $colorBleu; }
   padding-top: 30px;
 }
 h2{
-  font-family:'Opan Sans', sans-serif;
-  color:#555;
+  font-family: $policeTitre, sans-serif;
+  color:white;
+  font-size: 34px;
+  text-transform: uppercase;
 }
 .yo{
   width:90%;
@@ -230,6 +232,9 @@ hr{
 		margin-left: 50px;
 	}
 }
+/*Bandeau separateur*/
+.bandeau { height: 190px; width: 100%;
+ background: $colorBleu;padding: 50px; }
 
 footer { 
 	
