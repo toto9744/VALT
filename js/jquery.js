@@ -32,7 +32,7 @@ $('.yo').slick({
   dots:true,
   arrows: true,
   centerMode: true,
-  centerPadding: '20px',
+ centerPadding: '250px',
   responsive: [
     {
       breakpoint: 768,
