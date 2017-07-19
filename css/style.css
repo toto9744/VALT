@@ -1,227 +1,49 @@
-@charset "UTF-8";
 /*
-font-family: 'Raleway', sans-serif;
-font-family: 'Crimson Text', serif;
-font-family: 'Signika', sans-serif;
+Error: Invalid CSS after "...f2d49d09f2380fd": expected "{", was "}"
+        on line 212 of scss/style.scss
+
+207:   padding-top: 30px;
+208: <<<<<<< HEAD
+209: 
+210: =======
+211: >>>>>>> f90be2725b4e447ddf78cb285f2d49d09f2380fd
+212: }
+213: h2{
+214:   font-family:'Opan Sans', sans-serif;
+215:   color:#555;
+216: }
+217: .yo{
+
+Backtrace:
+scss/style.scss:212
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1137:in `expected'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1132:in `tok!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:665:in `block'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:666:in `block'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:658:in `ruleset'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:406:in `_to_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
 */
-/*bleu de simplon,*/
-/*jaune de simplo,*/
-/*police des titres*/
-/*police paragraphes*/
-/*police de la navigation*/
-/*Taille de police des paragraphes*/
-/*Taille de police des paragraphes en responsives*/
-body {
-  margin: 0 auto;
-  padding: 0;
-  text-align: center; }
-
-/*Mise en place d'un formulaire*/
-.formulaire {
-  height: 600px;
-  width: 400px;
-  position: absolute;
-  margin-left: 750px;
-  background-color: #ededed;
-  z-index: 2;
-  border-radius: 8px;
-  border: 4px solid #2a4789;
-  font-family: "raleway", sans-serif; }
-  .formulaire h3 {
-    margin-top: 40px; }
-  .formulaire h5 {
-    margin-top: 40px; }
-  .formulaire label {
-    float: left;
-    clear: left;
-    margin: 11px 20px 0 0;
-    width: 95px;
-    text-align: right;
-    color: #2a4789;
-    text-transform: uppercase;
-    text-shadow: 0px 1px 0px #F2F2F2; }
-  .formulaire input {
-    width: 260px;
-    height: 55px;
-    padding: 5px 20px 0 20px;
-    margin: 0 0 20px 0;
-    background: white;
-    border-radius: 5px;
-    color: #2a4789; }
-  .formulaire textarea {
-    width: 260px;
-    height: 170px;
-    padding: 12px 20px 0 20px;
-    margin: 0 0 20px 0;
-    border-radius: 5px;
-    text-transform: uppercase; }
-  .formulaire .envoie {
-    background: #efdf31;
-    color: colorBleu;
-    margin-top: 10px; }
-
-/*Stylisation de la bar de navigation*/
-.navbar-inverse {
-  height: 120px;
-  margin-bottom: 50px;
-  font-family: "raleway", sans-serif;
-  border: none;
-  border-bottom: 2px solid rgba(42, 71, 137, 0.2);
-  box-shadow: 5px 5px 8px rgba(42, 71, 137, 0.2);
-  background-color: white; }
-  .navbar-inverse img {
-    width: 240px;
-    height: 100px;
-    margin: 10px; }
-  .navbar-inverse button {
-    height: 40px;
-    width: 100px;
-    margin-left: 50px;
-    border-color: #2a4789;
-    text-transform: uppercase;
-    background: white;
-    color: #2a4789; }
-  .navbar-inverse button:hover {
-    background-color: #efdf31;
-    color: white; }
-  .navbar-inverse ul {
-    text-transform: uppercase; }
-
-.navbar-collapse {
-  margin-top: 3%; }
-
-/*changement de couleur des liens de la bar de nav*/
-.navbar-inverse .navbar-nav > li > a {
-  color: #2a4789; }
-
-.navbar-inverse .navbar-nav > li > a:hover {
-  color: #efdf31; }
-
-/*ajout d'un carousel - modif ajout d'une bordure*/
-.carousel-inner {
-  border: solid 10px #2a4789; }
-
-/*Stylisation du text a l'intérieur du carousel*/
-.carousel-caption {
-  margin-bottom: 150px; }
-  .carousel-caption h1 {
-    font-family: "Signika", sans-serif;
-    height: 100px;
-    width: 100%;
-    background-color: rgba(239, 223, 49, 0.3);
-    margin-bottom: 30px;
-    padding-top: 8px; }
-  .carousel-caption p {
-    font-family: "Crimson Text", serif;
-    font-size: 24px; }
-
-/*supression du text dans le carousel si la width est inférieur a 1000px*/
-@media all and (max-width: 1000px) {
-  .carousel-caption {
-    display: none; } }
-/*Stylasation du bouton responsive de la navbar*/
-button.navbar-toggle.collapsed {
-  background-color: #2a4789;
-  width: 60px; }
-
-button.navbar-toggle.collapsed:hover {
-  background-color: #efdf31; }
-
-.navbar-toggle .icon-bar {
-  background-color: red; }
-
-/*Ajout d'un trait separateur d'element*/
-.trait {
-  height: 4px;
-  width: 150px;
-  margin: auto;
-  background: rgba(239, 223, 49, 0.7);
-  border-radius: 8px;
-  margin-top: 80px;
-  margin-bottom: 80px; }
-
-/*stylisation du text*/
-.intro {
-  margin-bottom: 100px; }
-
-.intro p {
-  text-align: center;
-  width: 500px;
-  margin: auto;
-  font-family: policePara;
-  font-size: 24px;
-  color: #2a4789; }
-
-.intro h2 {
-  width: 600px;
-  margin: auto;
-  margin-bottom: 40px; }
-
-/*changement de la taille de police en dessous de 1020px;*/
-@media all and (max-width: 1020px) {
-  .intro p {
-    font-size: 15px;
-    width: 300px; }
-
-  .intro h2 {
-    width: 350px;
-    font-size: 24px; } }
-/*redimension de l'img */
-@media all and (max-width: 420px) {
-  .navbar-brand {
-    margin-top: -65px; } }
-.scrollup {
-  background-color: #2a4789;
-  color: #fff; }
-
-.scrollup:hover {
-  background-color: #2a4789;
-  color: #fff; }
-
-#bio {
-  margin-left: 650px; }
-
-.endbio {
-  margin-left: -650px; }
-
-#video {
-  height: 460px;
-  width: 700px;
-  margin: auto;
-  border: solid 3px  black; }
-  #video img {
-    height: 390px; }
-
-.nav-center {
-  margin-bottom: 30px;
-  text-align: center;
-  display: inline-block; }
-  .nav-center a {
-    float: left; }
-
-.wrapper {
-  width: 100%;
-  text-align: center;
-  padding-top: 30px; }
-
-h2 {
-  font-family: 'Opan Sans', sans-serif;
-  color: #555; }
-
-.yo {
-  width: 90%;
-  margin: 0px auto;
-  padding-top: 50px; }
-
-.slick-slide {
-  margin-left: 10px;
-  margin-right: 10px; }
-
-hr {
-  width: 600px; }
-
-@media all and (max-width: 420px) {
-  .slick-slide {
-    display: block; } }
-
-/*# sourceMappingURL=style.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...f2d49d09f2380fd\": expected \"{\", was \"}\"\A         on line 212 of scss/style.scss\A \A 207:   padding-top: 30px;\A 208: <<<<<<< HEAD\A 209: \A 210: =======\A 211: >>>>>>> f90be2725b4e447ddf78cb285f2d49d09f2380fd\A 212: }\A 213: h2{\A 214:   font-family:'Opan Sans', sans-serif;\A 215:   color:#555;\A 216: }\A 217: .yo{"; }
