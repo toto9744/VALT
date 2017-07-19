@@ -3,15 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
   <title>projet groupe valt</title>
-  
+
 
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
 
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Raleway|Signika" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -20,140 +22,165 @@
 
 <body>
 
-  
-	<!--=============================================ALEXANDRE======================================-->
-
   <div class="navbar navbar-inverse navbar-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
         
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="images/logo_simplon.png" alt="logo de simplon"></a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse navbar-right">
-          <ul class="nav navbar-nav">
-          <li class="#home"><a href="#home">qui sommes nous ?</a><div class="trait_anime"></div></li>
-            <li class="#apprenant"><a href="#bio">les apprenants</a><div class="trait_anime2"></div></li>
-            <li><a href="#about">nos travaux</a><div class="trait_anime3"></div></li>
-            <li><button class="contact">contact</button></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+        <a class="navbar-brand" href="#"><img src="images/logo_simplon.png" alt="logo de simplon"></a>
       </div>
-    </div>      
-<div class="formulaire">
-   <h3>Vous souhaitez nous contacter ?</h3>
-        <h5>Envoyez nous un email pour nous faire par de vos intérrogations !</h5>
-           <form action="#" method="post">
-             <fieldset>
-               <label for="nom">Name :</label>
-                  <input type="text" id="nom" placeholder="Jaquie michell par ex:"/>
-                <label for="email">Email:</label>
-                  <input type="email" name="email" placeholder="fistinier@gmail.fr">
-               <label for="message">Message</label>
-                  <textarea  id="message" cols="30" rows="10" placeholder="Posez vos questions !! Temp de réponse environ 2siecles..."></textarea> 
-                <input class="envoie" type="submit" value="envoi message"/>
-             </fieldset>
-           </form>
-</div>
-     <header>
-       <div class="container">
-                <div id="swicht" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#swicht" data-slide-to="0" class="active"></li>
-                  <li data-target="#swicht" data-slide-to="1"></li>
-                  <li data-target="#swicht" data-slide-to="2"></li>
-                </ol>
+      <div id="navbar" class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li class="#home"><a href="#home">qui sommes nous ?</a>
+            <div class="trait_anime"></div>
+          </li>
+          <li class="#apprenant"><a href="#apprenant">les apprenants</a>
+            <div class="trait_anime2"></div>
+          </li>
+          <li><a href="#travaux">nos travaux</a>
+            <div class="trait_anime3"></div>
+          </li>
+          <li><button class="contact">contact</button></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+  <div class="formulaire">
+    <h3>Vous souhaitez nous contacter ?</h3>
+    <h5>Envoyez nous un email pour nous faire par de vos intérrogations !</h5>
+    <form action="#" method="post">
+      <fieldset>
+        <label for="nom">Name :</label>
+        <input type="text" id="nom" placeholder="Jaquie michell par ex:" />
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="fistinier@gmail.fr">
+        <label for="message">Message</label>
+        <textarea id="message" cols="30" rows="10" placeholder="Posez vos questions !! Temp de réponse environ 2siecles..."></textarea>
+        <input class="envoie" type="submit" value="envoi message" />
+      </fieldset>
+    </form>
+  </div>
+  <header>
+    <div class="container">
+      <div id="swicht" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#swicht" data-slide-to="0" class="active"></li>
+          <li data-target="#swicht" data-slide-to="1"></li>
+          <li data-target="#swicht" data-slide-to="2"></li>
+        </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
 
 
-      <img src="images/banniere.jpeg" alt="web dev">
-             <div class="carousel-caption">
-        <h1> Simplon l'apprentissage par soi-même </h1>
+            <img src="images/banniere.jpeg" alt="web dev">
+            <div class="carousel-caption">
+              <h1> Simplon l'apprentissage par soi-même </h1>
               <p>A Simplon, l'apprentissage se fait par soi-même. Les formateurs donnent des ressources à lire, des exercices
                 à faire . Si il y a un point de blocage, faire d'abord une recherche sur Internet , si la solution n'a pas
                 été trouvé , voir avec ses collègues et en dernier recours faire appel aux formateurs .</p>
-        </div>  
-       
-    </div>
+            </div>
 
-    <div class="item">
-      <img src="images/ban.jpg" alt="web dev">
-        <div class="carousel-caption">
-          <h1>Les technos utilisées à Simplon</h1>
-              <p>En venant à Simplon , vous découvrirez le monde de linux , l'utlisation de git pour rendre vos projets , vous apprendrez à utlisez des éditeurs de code(Sublime Text,Atom,Visual Studio Code),à utiliser les  languages du web (HTML/CSS,Javascript,Jquery) et les outils(Bootstrap et SASS) .</p>
-        </div>
+      </div>
+          
+              
 
-    </div>
+                    <div class="item">
+                      <img src="images/ban.jpg" alt="web dev">
+                      <div class="carousel-caption">
+                        <h1>Les technos utilisées à Simplon</h1>
+                        <p>En venant à Simplon , vous découvrirez le monde de linux , l'utlisation de git pour rendre vos projets
+                          , vous apprendrez à utlisez des éditeurs de code(Sublime Text,Atom,Visual Studio Code),à utiliser
+                          les languages du web (HTML/CSS,Javascript,Jquery) et les outils(Bootstrap et SASS) .</p>
+                      </div>
 
-    <div class="item">
-      <img src="images/banniere3.jpg" alt="web dev">
-          <div class="carousel-caption">
-              <h1>Simplon c'est aussi apprendre a travaillé ensemble</h1>
-                  <p>A Simplon , pas de concurrence , de la solidarité et des règles de vie en communauté. Si vous êtes bloqué , soyez rassuré vous pourrez compter sur l'aide de vos collègues . On marche tous ensemble , on avance tous ensemble</p>
-          </div>
-    </div>
-  </div>
+                    </div>
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#swicht" data-slide="prev">
+                    <div class="item">
+                      <img src="images/banniere3.jpg" alt="web dev">
+                      <div class="carousel-caption">
+                        <h1>Simplon c'est aussi apprendre a travaillé ensemble</h1>
+                        <p>A Simplon , pas de concurrence , de la solidarité et des règles de vie en communauté. Si vous êtes
+                          bloqué , soyez rassuré vous pourrez compter sur l'aide de vos collègues . On marche tous ensemble
+                          , on avance tous ensemble</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#swicht" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#swicht" data-slide="next">
+                  <a class="right carousel-control" href="#swicht" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
     <span class="sr-only">Next</span>
   </a>
 
 
-</div>
-         
-       </div>
-     </header>
-  </div>
-      <div class="trait_anime"></div>
-  <div class="trait"></div><!--ligne separatrice-->
-    <div class="intro">
-          <div class="container">
-             <h2>Un lieu de découverte</h2>
-      <p>En venant à Simplon , vous apprendrez à vous connaître , apprendre à connaître vos collègues. Peut importe vos connaissances informatiques , votre cursus et votre âge , ici tout le monde à sa place. A simplon , vous recevrez une formation solide pour maîtriser les outils du web ( html/css , sass , bootstrap,...) . Prêt à vous lancer dans l'aventure ? </p>
+                </div>
 
-          </div><!--container-->
-     </div> <!--Texte d'introduction-->
-
-    
-
-  <!--=============================================ALEXANDRE======================================-->
-
-
-    <h2>Video</h2>
-
-      <div class="trait"></div>
-          <div id="video">
-            <iframe src="https://www.youtube.com/embed/Ye8JqmnEDLo?ecver=2" frameborder="0"allowfullscreen></iframe></div>
-
+              </div>
+            </header>
           </div>
 
+          <div class="trait"></div>
+          <!--ligne separatrice-->
+    <div id="home">
+        <div class="intro">
+          <div class="container">
+            <h2>Un lieu de découverte</h2>
+            <p>En venant à Simplon , vous apprendrez à vous connaître , apprendre à connaître vos collègues. Peut importe vos
+              connaissances informatiques , votre cursus et votre âge , ici tout le monde à sa place. A simplon , vous recevrez
+              une formation solide pour maîtriser les outils du web ( html/css , sass , bootstrap,...) . Prêt à vous lancer
+              dans l'aventure ? </p>
+
+          </div>
+          <!--container-->
+        </div>
+        <!--Texte d'introduction-->
+    </div>
 
 
-  <!--=============================================THOMAS======================================-->
-  <div id="bio">
 
-    <div class=".slider">
+        <h2>Video</h2>
+
+        <div class="trait"></div>
+        <div id="video">
+          <iframe src="https://www.youtube.com/embed/Ye8JqmnEDLo?ecver=2" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+          <div class="trait"></div>
+
+   <div id="apprenant">   
+
+    <h2>Les apprenants</h2>
+          <div class="trait"></div>
+<div class="wrapper">
+            <h1>Les apprenant</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <div class="carousel yo">
       <!-- ============== Houssen ================== -->
 
-      <div class="row">
-        <div class="col-sm-6 col-md-4"> 
+      
           <div class="thumbnail">
-            <img src="images/houssem.jpg" alt="ABASBAY Houssen">
+            <img src="images/houssem.jpg" width="100px" height="100px" alt="ABASBAY Houssen">
             <div class="caption">
               <h3>ABASBAY Houssen</h3>
               <i class="fa fa-github" aria-hidden="true"></i>
@@ -166,16 +193,12 @@
 
             </div>
           </div>
-        </div>
-      </div>
       <!-- ============================== Benjamin ==================== -->
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
+      
           <div class="thumbnail">
-            <img src="images/benjamin.jpg" alt="ARNOUX Benjamin">
+            <img src="images/benjamin.jpg" width="100px" height="100px" alt="ARNOUX Benjamin">
             <div class="caption">
               <h3>ARNOUX Benjamin</h3>
-                <p>Passe beaucoup trop de temp sur brazer</p>
               <i class="fa fa-github" aria-hidden="true"></i>
               <i class="fa fa-html5" aria-hidden="true"></i>
               <i class="fa fa-css3" aria-hidden="true"></i>
@@ -186,13 +209,10 @@
 
             </div>
           </div>
-        </div>
-      </div>
       <!-- ============================== Bruno ==================== -->
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
+      
           <div class="thumbnail">
-            <img src="images/bruno.jpg" alt="BEGUE Bruno">
+            <img src="images/bruno.jpg" width="100px" height="100px" alt="BEGUE Bruno">
             <div class="caption">
               <h3> BEGUE Bruno </h3>
               <i class="fa fa-github" aria-hidden="true"></i>
@@ -205,17 +225,12 @@
 
             </div>
           </div>
-        </div>
-      </div>
       <!-- ============================== Denilson ==================== -->
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
+      
           <div class="thumbnail">
-            <img src="images/Denilson.jpeg" alt="BIEN-AIME Denilson">
+            <img src="images/Denilson.jpeg" width="100px" height="100px" alt="BIEN-AIME Denilson">
             <div class="caption">
               <h3>BIEN-AIME Denilson</h3>
-                  <p>En couple avec Robin</p>
-                  <p>Il adore manger du KFC. Dommage qu'il en est pas a la reunion</p>
               <i class="fa fa-github" aria-hidden="true"></i>
               <i class="fa fa-html5" aria-hidden="true"></i>
               <i class="fa fa-css3" aria-hidden="true"></i>
@@ -226,13 +241,10 @@
 
             </div>
           </div>
-        </div>
-      </div>
       <!-- ============================== Alexandre Ca==================== -->
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
+      
           <div class="thumbnail">
-            <img src="images/moi.jpg" alt="CALLENS Alexandre">
+            <img src="images/moi.jpg" width="100px" height="100px" alt="CALLENS Alexandre">
             <div class="caption">
               <h3>CALLENS Alexandre</h3>
               <i class="fa fa-github" aria-hidden="true"></i>
@@ -245,13 +257,10 @@
 
             </div>
           </div>
-        </div>
-      </div>
       <!-- ============================== Nicolas ==================== -->
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
+      
           <div class="thumbnail">
-            <img src="images/nicolas.jpg" alt="CLAIN Nicolas">
+            <img src="images/nicolas.jpg" width="100px" height="100px" alt="CLAIN Nicolas">
             <div class="caption">
               <h3> CLAIN Nicolas</h3>
               <i class="fa fa-github" aria-hidden="true"></i>
@@ -265,13 +274,10 @@
 
             </div>
           </div>
-        </div>
-      </div>
       <!-- ============================== Alexandre Cl==================== -->
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
+      
           <div class="thumbnail">
-            <img src="images/alex.jpg" alt="CLAIR Alexandre">
+            <img src="images/alex.jpg" width="100px" height="100px" alt="CLAIR Alexandre">
             <div class="caption">
               <h3> CLAIR Alexandre</h3>
               <i class="fa fa-github" aria-hidden="true"></i>
@@ -284,15 +290,13 @@
 
             </div>
           </div>
-        </div>
-      </div>
       <!-- ============================== Valérie ==================== -->
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
+      
           <div class="thumbnail">
-            <img src="images/valerie.jpg" alt="DIJOUX Valérie">
+            <img src="images/valerie.jpg" width="100px" height="150px" alt="DIJOUX Valérie">
             <div class="caption">
               <h3>DIJOUX Valérie </h3>
+              <br>
               <i class="fa fa-github" aria-hidden="true"></i>
               <i class="fa fa-html5" aria-hidden="true"></i>
               <i class="fa fa-css3" aria-hidden="true"></i>
@@ -303,13 +307,10 @@
 
             </div>
           </div>
-        </div>
-      </div>
       <!-- ============================== Laurent ==================== -->
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
+      
           <div class="thumbnail">
-            <img src="img/" alt="GREGOIRE Laurent">
+            <img src="img/robin.jpg" width="100px" height="100px" alt="GREGOIRE Laurent">
             <div class="caption">
               <h3> GREGOIRE Laurent</h3>
               <i class="fa fa-github" aria-hidden="true"></i>
@@ -322,16 +323,12 @@
 
             </div>
           </div>
-        </div>
-      </div>
       <!-- ============================== Robin ==================== -->
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
+      
           <div class="thumbnail">
-            <img src="images/robin.jpg" alt="HERMAND Robin">
+            <img src="images/robin.jpg" width="100px" height="100px" alt="HERMAND Robin">
             <div class="caption">
               <h3> HERMAND Robin </h3>
-                <p>Il aime le freezbe et est en couple avec Denilson</p>
               <i class="fa fa-github" aria-hidden="true"></i>
               <i class="fa fa-html5" aria-hidden="true"></i>
               <i class="fa fa-css3" aria-hidden="true"></i>
@@ -342,13 +339,10 @@
 
             </div>
           </div>
-        </div>
-      </div>
       <!-- ============================== Joséphine ==================== -->
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
+      
           <div class="thumbnail">
-            <img src="images/josephine.jpg" alt="LE GLEUT Joséphine">
+            <img src="images/josephine.jpg" width="100px" height="100px" alt="LE GLEUT Joséphine">
             <div class="caption">
               <h3> LE GLEUT Joséphine</h3>
               <i class="fa fa-github" aria-hidden="true"></i>
@@ -361,13 +355,10 @@
 
             </div>
           </div>
-        </div>
-      </div>
       <!-- ============================== Rémy ==================== -->
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
+      
           <div class="thumbnail">
-            <img src="images/Remy.jpg" alt="MOZELLE Rémy">
+            <img src="images/Remy.jpg" width="100px" height="100px" alt="MOZELLE Rémy">
             <div class="caption">
               <h3> MOZELLE Rémy </h3>
               <i class="fa fa-github" aria-hidden="true"></i>
@@ -380,17 +371,13 @@
 
             </div>
           </div>
-        </div>
-      </div>
       <!-- ============================== Rubbens ==================== -->
 
-       <div class="row">
-        <div class="col-sm-6 col-md-4">
+       
           <div class="thumbnail">
-            <img src="images/rubbens.jpeg" alt="MOZELLE Rémy">
+            <img src="images/rubbens.jpeg" width="100px" height="100px" alt="MOZELLE Rémy">
             <div class="caption">
               <h3> PAUVREALO Rubbens </h3>
-                <p>En couple avec sa main</p>
               <i class="fa fa-github" aria-hidden="true"></i>
               <i class="fa fa-html5" aria-hidden="true"></i>
               <i class="fa fa-css3" aria-hidden="true"></i>
@@ -401,15 +388,12 @@
 
             </div>
           </div>
-        </div>
-      </div>
 
 
       <!-- ============================== Vellen ==================== -->
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
+      
           <div class="thumbnail">
-            <img src="images/vellen.jpg" alt="SADAYEN Vellen">
+            <img src="images/vellen.jpg" width="100px" height="100px" alt="SADAYEN Vellen">
             <div class="caption">
               <h3>SADAYEN Vellen</h3>
               <i class="fa fa-github" aria-hidden="true"></i>
@@ -424,56 +408,85 @@
             </div>
           </div>
         </div>
+    </div>
+
+
+        <p>Si vous souhaiter revenir au debut de la page , cliquez sur le bouton ci-dessus.</p>
+        <p><button class="btn-primary"><a href="#home">Remonter</a></button></p>
+
+        <div class="trait"></div>
       </div>
+
+
     </div>
+   <div id="travaux">
+          <h2>Nos travaux</h2>
 
-    <div class="endbio">
-    <p>Si vous souhaiter revenir au debut de la page , cliquez sur le bouton ci-dessus.</p>
-      <p><button class="btn-primary"><a href="#">Remonter</a></button></p>
 
-          <div class="trait"></div>
-    </div>
-
-  </div>
-    <div class="slider">
+    <div id="product">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="images/illdy.png"><img src="images/idylemini.png" alt=""></a>
+            </div>
+            <div class="col-md-4">
+                <a href="images/onemillions.png"><img src="images/onemini.png" alt=""></a>
+            </div>
+                <a href="images/kirion.png"><img src="images/kirionmini.png" alt=""></a>
+            <div class="col-md-4">
+              
+            </div>
+        </div>
+    </div>    
+</div>
       
-    </div>
-
-  <!--=============================================LAURENT======================================-->
-
-
-  <div id="product">
-
-
-
-  </div>
-
-  <!--=============================================VELLEN======================================-->
+    
 
 
 
 
-  <footer>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+     <img src="images/logo_simplon.png" class="img-responsive" alt="logo de simplon"/>
+            </div>
+            <div class="col-md-6 col-xm-4">
+            <h3>Partenaire :</h3>
+                <ul>
+                  <li><a href="#">Mairie de St-Denis</a></li>
+                  <li><a href="#">L'adri</a></li>
+                  <li><a href="#">Region</a></li>
+                  <li><a href="#">Ile de France</a></li>
+                </ul>
+              </div>
+            <div class="col-md-3">
+                      <div class="icons">
+                        <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                        <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                        <i class="fa fa-google-plus fa-3x" aria-hidden="true"></i>
+                      </div>
+            </div>
+        </div>
+      </div>  
+    </footer>
 
-  </footer>
-
-  <!-- Placed at the end of the document so the pages load faster -->
-
-
-  
-  <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-
-
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-
- 
 
 
 
-  <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+
+
+    <script src="js/jquery.js"></script>
 </body>
 
 </html>

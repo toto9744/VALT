@@ -30,7 +30,7 @@ body {
 /*FORMULAIRE*/
 
 .formulaire { height: 600px; width: 400px; position: absolute;
- margin-left: 750px;
+ margin-left: 890px;
   background:white;
 
  	 z-index: 2; border-radius: 8px;
@@ -48,7 +48,12 @@ body {
  textarea { width: 260px; height: 170px; padding: 12px 20px 0 20px; margin: 0 0 20px 0;border-radius: 5px;
  text-transform: uppercase; }
  .envoie { background: rgba(55, 101, 239, 0.6); color: white; margin-top: 10px; border: none; text-transform: uppercase;} 	 }
-
+@media all and (max-width: 760px){
+ .formulaire { margin-left: 350px;margin-top: 150px; }
+}
+@media all and (max-width: 430px){
+	.formulaire { margin-left: 10px;width: 370px;height: 750px; }
+}
 /*FORMULAIRE*/
 
 /*Stylisation de la bar de navigation*/
@@ -71,7 +76,7 @@ body {
 		height: 40px;
 		width: 100px;
 		margin-left: 50px;
-		border-color: $colorBleu;
+		border: 3px solid $colorBleu;
 		
 		
 		text-transform: uppercase;
@@ -122,11 +127,12 @@ p { font-family: $policePara; font-size: 26px; }
 button.navbar-toggle.collapsed  {background-color: $colorBleu;width: 60px;}
 button.navbar-toggle.collapsed:hover {background-color: $colorJaune;}
 .navbar-inverse button { background-color: colorJaune; }
+.navbar-inverse .navbar-toggle:visited {background: $colorJaune;} 
 
 /*changement du boutton responsive bar de navigation*/
 .navbar-inverse .navbar-toggle { border: none; }
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {background-color: $colorBleu;}
-
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:visited { background-color: $colorJaune; }
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {margin-top: 30px;}
 /*Ajout d'un trait separateur d'element*/
 .trait { height: 4px;width: 150px; margin: auto; background: rgba(239, 223, 49,0.7);
@@ -167,19 +173,15 @@ font-size: $sizePara; color: $colorBleu; }
     100% {background-color: $colorBleu;}
 }
 /*Stylisation du bouton*/
-.endbio { button  { background-color: $colorBleu; border: none; border-radius: 6px;
+.btn-primary{ background-color: $colorBleu; border: none; border-radius: 6px;
 	width: 110px;height: 36px;
- a { color: white; text-decoration: none; } } }
-.endbio { button:hover { 
+ a { color: white; text-decoration: none; } } 
+.btn-primary:hover { 
  	
     background-color: $colorJaune;
     animation-name: example;
-    animation-duration: 4s;} }
+    animation-duration: 4s;} 
 
-
-.endbio {
-    margin-left: -650px;
-}
 
 #video {height: 460px; 
 	width: 700px; 
@@ -196,6 +198,91 @@ font-size: $sizePara; color: $colorBleu; }
 .nav-center{margin-bottom: 30px; 
 	text-align: center; 
 	display: inline-block; a{float: left;}
+}
+
+
+.wrapper{
+  width:100%;
+  text-align:center;
+  padding-top: 30px;
+}
+h2{
+  font-family:'Opan Sans', sans-serif;
+  color:#555;
+}
+.yo{
+  width:90%;
+  margin:0px auto;
+  padding-top:50px;
+}
+.slick-slide{
+  margin-left:10px;
+  margin-right:10px;
+}
+hr{
+    width:600px;
+}
+
+#product {
+	img {
+		width: 300px;
+		height: 550px;
+		margin-left: 50px;
+	}
+}
+
+footer { 
+	
+
+	margin-top: 70px;
+	background: $colorBleu;
+	padding: 1px; height: 240px;
+	width: 100%;
+
+	h3 { color: white; margin-top: 40px; }
+	ul { text-align: left;}
+	li { width: 220px; list-style: none;}
+	a{ color: white; font-size: 25px; }
+	a:hover { color: $colorJaune; text-decoration: none; }
+	a:visited {color: $colorJaune;}	
+
+	
+	img {
+		width: 240px;height: 100px;
+		margin-top: 50px;
+	 	
+	}
+
+
+	i {	display: inline-block;
+		color: white; margin: 15px;
+		margin-top: 70px;
+
+	}
+
+	i:hover { opacity: 0.8;
+	transform: scale(1.4); }
+
+
+}/*footer*/
+
+
+@media all and (max-width: 900px){
+	footer { height: 500px;
+	img { margin-left: 220px; }
+	ul {margin-left: 190px;margin-top: 20px;}
+	i { margin-top: 15px; } } 
+
+}
+@media all and (max-width: 500px){
+	button.navbar-toggle.collapsed { width: 40px;}
+
+	footer { 
+	img {margin-left: 27px;}
+	ul { margin-left: 10px;
+	 }
+			 }
+
 }
 
 

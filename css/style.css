@@ -46,7 +46,7 @@ body {
   height: 600px;
   width: 400px;
   position: absolute;
-  margin-left: 750px;
+  margin-left: 890px;
   background: white;
   z-index: 2;
   border-radius: 8px;
@@ -87,6 +87,15 @@ body {
     border: none;
     text-transform: uppercase; }
 
+@media all and (max-width: 760px) {
+  .formulaire {
+    margin-left: 350px;
+    margin-top: 150px; } }
+@media all and (max-width: 430px) {
+  .formulaire {
+    margin-left: 10px;
+    width: 370px;
+    height: 750px; } }
 /*FORMULAIRE*/
 /*Stylisation de la bar de navigation*/
 .navbar-inverse {
@@ -105,7 +114,7 @@ body {
     height: 40px;
     width: 100px;
     margin-left: 50px;
-    border-color: #2a4789;
+    border: 3px solid #2a4789;
     text-transform: uppercase;
     background: white;
     color: #2a4789; }
@@ -166,12 +175,18 @@ button.navbar-toggle.collapsed:hover {
 .navbar-inverse button {
   background-color: colorJaune; }
 
+.navbar-inverse .navbar-toggle:visited  {
+  background: #efdf31; }
+
 /*changement du boutton responsive bar de navigation*/
 .navbar-inverse .navbar-toggle {
   border: none; }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
   background-color: #2a4789; }
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:visited {
+  background-color: #efdf31; }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
   margin-top: 30px; }
@@ -251,23 +266,20 @@ button.navbar-toggle.collapsed:hover {
   100% {
     background-color: #2a4789; } }
 /*Stylisation du bouton*/
-.endbio button {
+.btn-primary {
   background-color: #2a4789;
   border: none;
   border-radius: 6px;
   width: 110px;
   height: 36px; }
-  .endbio button a {
+  .btn-primary a {
     color: white;
     text-decoration: none; }
 
-.endbio button:hover {
+.btn-primary:hover {
   background-color: #efdf31;
   animation-name: example;
   animation-duration: 4s; }
-
-.endbio {
-  margin-left: -650px; }
 
 #video {
   height: 460px;
@@ -294,5 +306,86 @@ button.navbar-toggle.collapsed:hover {
   display: inline-block; }
   .nav-center a {
     float: left; }
+
+.wrapper {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px; }
+
+h2 {
+  font-family: 'Opan Sans', sans-serif;
+  color: #555; }
+
+.yo {
+  width: 90%;
+  margin: 0px auto;
+  padding-top: 50px; }
+
+.slick-slide {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+hr {
+  width: 600px; }
+
+#product img {
+  width: 300px;
+  height: 550px;
+  margin-left: 50px; }
+
+footer {
+  margin-top: 70px;
+  background: #2a4789;
+  padding: 1px;
+  height: 240px;
+  width: 100%; }
+  footer h3 {
+    color: white;
+    margin-top: 40px; }
+  footer ul {
+    text-align: left; }
+  footer li {
+    width: 220px;
+    list-style: none; }
+  footer a {
+    color: white;
+    font-size: 25px; }
+  footer a:hover {
+    color: #efdf31;
+    text-decoration: none; }
+  footer a:visited {
+    color: #efdf31; }
+  footer img {
+    width: 240px;
+    height: 100px;
+    margin-top: 50px; }
+  footer i {
+    display: inline-block;
+    color: white;
+    margin: 15px;
+    margin-top: 70px; }
+  footer i:hover {
+    opacity: 0.8;
+    transform: scale(1.4); }
+
+/*footer*/
+@media all and (max-width: 900px) {
+  footer {
+    height: 500px; }
+    footer img {
+      margin-left: 220px; }
+    footer ul {
+      margin-left: 190px;
+      margin-top: 20px; }
+    footer i {
+      margin-top: 15px; } }
+@media all and (max-width: 500px) {
+  button.navbar-toggle.collapsed {
+    width: 40px; }
+
+  footer img {
+    margin-left: 27px; }
+  footer ul {
+    margin-left: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
