@@ -161,7 +161,8 @@ body {
     padding-top: 8px; }
   .carousel-caption p {
     font-family: "Crimson Text", serif;
-    font-size: 26px; }
+    font-size: 26px;
+    color: #c9ffe4; }
 
 /*supression du text dans le carousel si la width est inférieur a 1000px*/
 /*Stylasation du bouton responsive de la navbar*/

@@ -118,7 +118,7 @@ body {
  h1 {font-family: $policeTitre;
 	height: 100px; width: 100%; background-color: rgba(239, 223, 49,0.3); margin-bottom: 30px;
 	padding-top: 8px;  }	
-p { font-family: $policePara; font-size: 26px; }	
+p { font-family: $policePara; font-size: 26px; color:#c9ffe4; }	
 }
 
 /*supression du text dans le carousel si la width est inférieur a 1000px*/

@@ -39,7 +39,7 @@ $('.yo').slick({
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '10px',
         slidesToShow: 3
       }
     },
@@ -48,7 +48,7 @@ $('.yo').slick({
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '10px',
         slidesToShow: 1
       }
     }
