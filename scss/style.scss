@@ -140,7 +140,7 @@ border-radius: 8px; margin-top: 80px;margin-bottom: 80px; }
 
 /*stylisation du text*/
 .intro {margin-bottom: 100px;}
-.intro p {text-align: center; width: 500px; margin: auto; font-family: policePara; 
+.intro p {text-align: justify; width: 500px; margin: auto; font-family: policePara; 
 font-size: $sizePara; color: $colorBleu; }
 .intro h2 {width: 600px;margin: auto; margin-bottom: 40px;}
 
@@ -212,7 +212,7 @@ font-size: $sizePara; color: $colorBleu; }
  	border: solid 3px $colorBleu;
  	border-radius: 90px;
  }}
-.aprenant_text {text-align: center; width: 500px; margin: auto; font-family: policePara; 
+.aprenant_text {text-align: justify; width: 500px; margin: auto; font-family: policePara; 
 font-size: $sizePara; color: $colorBleu; }
 @media all and (max-width: 600px){
 .aprenant_text { font-size: 19px; width: 250px; }
