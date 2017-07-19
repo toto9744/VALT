@@ -214,6 +214,9 @@ font-size: $sizePara; color: $colorBleu; }
  }}
 .aprenant_text {text-align: center; width: 500px; margin: auto; font-family: policePara; 
 font-size: $sizePara; color: $colorBleu; }
+@media all and (max-width: 600px){
+.aprenant_text { font-size: 19px; width: 250px; }
+}
 .wrapper{
   width:100%;
   text-align:center;
@@ -259,8 +262,8 @@ footer {
 	width: 100%;
 
 	h3 { color: white; margin-top: 40px; }
-	ul { text-align: left;}
-	li { width: 220px; list-style: none;}
+	ul { text-align: left; margin-left: 300px;}
+	li { width: 220px; list-style: none; }
 	a{ color: white; font-size: 25px; }
 	a:hover { color: $colorJaune; text-decoration: none; }
 	a:visited {color: $colorJaune;}	
@@ -292,7 +295,7 @@ footer {
 @media all and (max-width: 900px){
 	footer { height: 500px;
 	img { margin-left: 220px; }
-	ul {margin-left: 190px;margin-top: 20px;}
+	ul {margin-left: 140px;margin-top: 20px;}
 	i { margin-top: 15px; } } 
 	#product img { margin-bottom: 20px;  width: 550px; height: 340px;  }
 	#product img:hover { width: 650px; height: 440px;padding: 0;}
