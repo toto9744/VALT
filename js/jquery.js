@@ -32,14 +32,14 @@ $('.yo').slick({
   dots:true,
   arrows: true,
   centerMode: true,
-  centerPadding: '20px',
+ centerPadding: '250px',
   responsive: [
     {
       breakpoint: 768,
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '10px',
         slidesToShow: 3
       }
     },
@@ -48,7 +48,7 @@ $('.yo').slick({
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '10px',
         slidesToShow: 1
       }
     }

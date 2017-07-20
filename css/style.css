@@ -161,7 +161,8 @@ body {
     padding-top: 8px; }
   .carousel-caption p {
     font-family: "Crimson Text", serif;
-    font-size: 26px; }
+    font-size: 26px;
+    color: #c9ffe4; }
 
 /*supression du text dans le carousel si la width est inférieur a 1000px*/
 /*Stylasation du bouton responsive de la navbar*/
@@ -206,7 +207,7 @@ button.navbar-toggle.collapsed:hover {
   margin-bottom: 100px; }
 
 .intro p {
-  text-align: center;
+  text-align: justify;
   width: 500px;
   margin: auto;
   font-family: policePara;
@@ -319,7 +320,7 @@ button.navbar-toggle.collapsed:hover {
     border-radius: 90px; }
 
 .aprenant_text {
-  text-align: center;
+  text-align: justify;
   width: 500px;
   margin: auto;
   font-family: policePara;
@@ -376,10 +377,14 @@ footer {
     margin-top: 40px; }
   footer ul {
     text-align: left;
-    margin-left: 300px; }
+    margin-left: 30px;
+    display: flex; }
   footer li {
     width: 220px;
     list-style: none; }
+    footer li img {
+      height: 100px;
+      width: 100px; }
   footer a {
     color: white;
     font-size: 25px; }
@@ -441,6 +446,10 @@ footer {
     margin-left: 27px; }
   footer ul {
     margin-left: 10px; }
+  footer li img {
+    width: 50px;
+    height: 50px;
+    justify-content: center; }
 
   #product img {
     margin-bottom: 90px;
